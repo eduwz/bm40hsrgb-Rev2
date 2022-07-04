@@ -21,7 +21,7 @@ Follow this [video guide](https://www.youtube.com/watch?v=fuBJbdCFF0Q) on how to
 - `Ctrl Del` = Right Control when held, Delete when tapped.
 - `Nav` = Navigate layer when held Tab or ' when tapped.
 - `Lower` &dArr; and `Raise` &uArr; are layer keys.
-- `Lower` &dArr; is Tap toggle = Acts like a Momentarily layer unless it’s tapped multiple times, which toggles the layer on.
+- `Lower` `&dArr;` is Tap toggle = Acts like a Momentarily layer unless it’s tapped multiple times, which toggles the layer on.
 
 ## Lower layer
 ![](https://i.imgur.com/T899j7H.jpg)
