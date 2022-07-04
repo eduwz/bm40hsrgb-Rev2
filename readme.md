@@ -3,7 +3,7 @@
 ![](https://i.imgur.com/pRpfnwDh.jpg)
     
     
-This is a QMK keymap[^1] for revision 2 of the krpublic board bm40hsrgb available on: [Aliexpress](https://www.aliexpress.com/item/4001147779116.html) 
+This is a QMK keymap[^1] for revision 2 of the krpublic board bm40hsrgb available on: [Aliexpress](https://www.aliexpress.com/item/4001147779116.html) and [Kprepublic site](https://kprepublic.com/collections/bm40/products/bm40-rgb-40-hot-swap-custom-mechanical-keyboard-pcb-qmk-underglow-type-c-planck).
 
 # How to compile
 You will need to compile this keymap into the firmware, follow the [QMK documentation](https://docs.qmk.fm/#/) and the [QMK MSYS tool page](https://msys.qmk.fm/) on how to compile.
