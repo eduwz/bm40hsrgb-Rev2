@@ -53,7 +53,6 @@ I felt the need to have access to `Enter` with both hands and using the thumb fo
 
 The game layer is mainly for csgo and apex legends since in other games I didn't feel the need, `1234` is used to cycle through weapons and utilities, so far I didn't find a comfortable spot for the `4` key because of that I am rebinding ingame to a mouse button instead.
 
-#### Last thought:
   [^1]: you can use [Vial](https://github.com/vial-kb/vial-gui) to configure the keymap without having to recompile and reflash.
 
 
