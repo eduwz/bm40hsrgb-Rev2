@@ -14,36 +14,34 @@ Follow this [video guide](https://www.youtube.com/watch?v=fuBJbdCFF0Q) on how to
 # Visual layout
 
 ## Base layer
-![](https://i.imgur.com/Vt0BOMt.png)
+![](https://i.imgur.com/AgYYdmf.png)
 
 - `Gesc` = Escape when pressed, ` when Shift or GUI are held.
 - `Rs Enter` = Right Shift when held, Enter when tapped.
 - `Ctrl Del` = Right Control when held, Delete when tapped.
-- `Nav` = Navigate layer when held Tab or ' when tapped.
+- `Func` = Function layer when held Tab or ' when tapped.
 - `Lower` &dArr; and `Raise` &uArr; are layer keys.
 - `Lower` &dArr; is Tap toggle = Acts like a Momentarily layer unless it’s tapped multiple times, which toggles the layer on.
 
 ## Lower layer
-![](https://i.imgur.com/T899j7H.jpg)
+![](https://i.imgur.com/GOksdqy.png)
 
 - Blank keys = Transparent keys which Use the next lowest non-transparent key.
 
 ## Raise layer
-![](https://i.imgur.com/fBKXn4H.jpg)
+![](https://i.imgur.com/Wlo6rt7.png)
 
 ## Game layer
-![](https://i.imgur.com/qnnWObf.jpg)
+![](https://i.imgur.com/Ztdug7j.png)
 
-- Transparent keys are the base layer.
+## Function layer
+![](https://i.imgur.com/KRMlVCb.png)
 
-## Navigate layer
-![](https://i.imgur.com/x8o8MVm.jpg)
-
-## Num pad layer
-![](https://i.imgur.com/DUMwTYT.jpg)
+## Numpad layer
+![](https://i.imgur.com/XVSix4N.png)
 
 ## Adjust layer
-![](https://i.imgur.com/rHJUy0q.png)
+![](https://i.imgur.com/gSINZML.png)
 
 - `Game` and `NumPad` are toggle layers keys.
 
@@ -51,7 +49,9 @@ Follow this [video guide](https://www.youtube.com/watch?v=fuBJbdCFF0Q) on how to
 # Layout goals and thoughts
 I felt the need to have access to `Enter` with both hands and using the thumb for `Enter` feels better but I still use the Shift/Enter key sometimes.
 
-The game layer is mainly for csgo and apex legends since in other games I didn't feel the need, `1234` is used to cycle through weapons and utilities, so far I didn't find a comfortable spot for the `4` key because of that I am rebinding ingame to a mouse button instead.
+The game layer is mainly for apex and csgo/valo, `1234` is used to cycle through weapons and utilities, so far I did not found a comfortable spot for the `4` key and thats the only key that i need to rebind ingame, currently using a mouse button for that.
+
+
 
   [^1]: you can use [Vial](https://github.com/vial-kb/vial-gui) to configure the keymap without having to recompile and reflash.
 
