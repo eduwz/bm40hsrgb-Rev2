@@ -3,18 +3,18 @@
 ![](https://i.imgur.com/pRpfnwDh.jpg)
     
     
-This is a QMK keymap[^1] for revision 2 of the krpublic board bm40hsrgb available on: [Aliexpress](https://www.aliexpress.com/item/4001147779116.html) and [Kprepublic site](https://kprepublic.com/collections/bm40/products/bm40-rgb-40-hot-swap-custom-mechanical-keyboard-pcb-qmk-underglow-type-c-planck).
+This is a QMK keymap[^1] for BM40HSRGB **Revision 2** board made by Krepublic and available on: [Aliexpress](https://www.aliexpress.com/item/4001147779116.html) and [Kprepublic site](https://kprepublic.com/collections/bm40/products/bm40-rgb-40-hot-swap-custom-mechanical-keyboard-pcb-qmk-underglow-type-c-planck).
 
 # How to compile
-You will need to compile this keymap into the firmware, follow the [QMK documentation](https://docs.qmk.fm/#/) and the [QMK MSYS tool page](https://msys.qmk.fm/) on how to compile.
+Follow the [QMK documentation](https://docs.qmk.fm/#/) and the [QMK MSYS tool page](https://msys.qmk.fm/) on how to compile.
 
 # How to flash
-Follow this [video guide](https://www.youtube.com/watch?v=fuBJbdCFF0Q) on how to flash the firmware using the QMK toolbox.
+Follow this [video guide](https://www.youtube.com/watch?v=fuBJbdCFF0Q) on how to flash the firmware using the [QMK toolbox](https://github.com/qmk/qmk_toolbox).
 
 # Visual layout
 
 ## Base layer
-![](https://i.imgur.com/AgYYdmf.png)
+![](https://i.imgur.com/tqWTTZR.png)
 
 - `Gesc` = Escape when pressed, ` when Shift or GUI are held.
 - `Rs Enter` = Right Shift when held, Enter when tapped.
@@ -24,24 +24,24 @@ Follow this [video guide](https://www.youtube.com/watch?v=fuBJbdCFF0Q) on how to
 - `Lower` &dArr; is Tap toggle = Acts like a Momentarily layer unless it’s tapped multiple times, which toggles the layer on.
 
 ## Lower layer
-![](https://i.imgur.com/GOksdqy.png)
+![](https://i.imgur.com/GdZs82s.png)
 
 - Blank keys = Transparent keys which Use the next lowest non-transparent key.
 
 ## Raise layer
-![](https://i.imgur.com/Wlo6rt7.png)
+![](https://i.imgur.com/I36v4tu.png)
 
 ## Game layer
-![](https://i.imgur.com/Ztdug7j.png)
+![](https://i.imgur.com/3bDBSOM.png)
 
 ## Function layer
-![](https://i.imgur.com/KRMlVCb.png)
+![](https://i.imgur.com/JPPDmIa.png)
 
 ## Numpad layer
-![](https://i.imgur.com/XVSix4N.png)
+![](https://i.imgur.com/ochvfDZ.png)
 
 ## Adjust layer
-![](https://i.imgur.com/gSINZML.png)
+![](https://i.imgur.com/gS2INZML.png)
 
 - `Game` and `NumPad` are toggle layers keys.
 
@@ -54,5 +54,3 @@ The game layer is mainly for apex and csgo/valo, `1234` is used to cycle through
 
 
   [^1]: you can use [Vial](https://github.com/vial-kb/vial-gui) to configure the keymap without having to recompile and reflash.
-
-
