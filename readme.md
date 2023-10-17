@@ -1,4 +1,4 @@
-# Keymap for BM40hsrgb Rev2
+# BM40hsrgb Rev2
     
 ![](https://i.imgur.com/pRpfnwDh.jpg)
     
