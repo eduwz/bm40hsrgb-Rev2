@@ -3,7 +3,7 @@
 ![](https://i.imgur.com/pRpfnwDh.jpg)
     
     
-This is a QMK keymap[^1] for BM40HSRGB **Revision 2** board made by Krepublic and available on: [Aliexpress](https://www.aliexpress.com/item/4001147779116.html) and [Kprepublic site](https://kprepublic.com/collections/bm40/products/bm40-rgb-40-hot-swap-custom-mechanical-keyboard-pcb-qmk-underglow-type-c-planck).
+This is a QMK firmware[^1] for BM40HSRGB **Revision 2** board made by Krepublic and available on: [Aliexpress](https://www.aliexpress.com/item/4001147779116.html) and [Kprepublic site](https://kprepublic.com/collections/bm40/products/bm40-rgb-40-hot-swap-custom-mechanical-keyboard-pcb-qmk-underglow-type-c-planck).
 
 # How to compile
 Follow the [QMK documentation](https://docs.qmk.fm/#/) and the [QMK MSYS tool page](https://msys.qmk.fm/) on how to compile.
