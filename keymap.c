@@ -1,4 +1,4 @@
-/* Copyright 2023
+/* Copyright 2020 tominabox1
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -168,20 +168,42 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 /* Layer indicator only on keys with configured keycodes */
-bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
-    if (get_highest_layer(layer_state) > 0) {
-        uint8_t layer = get_highest_layer(layer_state);
+bool rgb_matrix_indicators_advanced_user (uint8_t led_min, uint8_t led_max) {
+  if (get_highest_layer (layer_state) > 0) {
+    uint8_t layer = get_highest_layer (layer_state);
 
-        for (uint8_t row = 0; row < MATRIX_ROWS; ++row) {
-            for (uint8_t col = 0; col < MATRIX_COLS; ++col) {
-                uint8_t index = g_led_config.matrix_co[row][col];
+    for (uint8_t row = 0; row < MATRIX_ROWS; ++ row) {
+      for (uint8_t col = 0; col < MATRIX_COLS; ++ col) {
+        uint8_t index = g_led_config. matrix_co [row][col];
 
-                if (index >= led_min && index < led_max && index != NO_LED &&
+        if (index >= led_min && index < led_max && index != NO_LED &&
                 keymap_key_to_keycode(layer, (keypos_t){col,row}) > KC_TRNS) {
-                    rgb_matrix_set_color(index, RGB_MAGENTA);
-                }
-            }
+          switch (layer) {
+            case _LOWER:
+              rgb_matrix_set_color(index, RGB_TEAL);
+              break;
+            case _RAISE:
+              rgb_matrix_set_color(index, RGB_PURPLE);
+              break;
+            case _GAME:
+              rgb_matrix_set_color(index, RGB_GREEN);
+              break;
+            case _FUN:
+              rgb_matrix_set_color(index, RGB_ORANGE);
+              break;
+            case _NUMP:
+              rgb_matrix_set_color(index, RGB_BLUE);
+              break;
+            case _ADJUST:
+              rgb_matrix_set_color(index, RGB_MAGENTA);
+              break;
+            default:
+              break;
+          }
         }
+      }
     }
-    return false;
+    return true;
+  }
+  return false;
 }
