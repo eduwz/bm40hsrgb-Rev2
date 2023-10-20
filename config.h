@@ -7,7 +7,11 @@
 #define DYNAMIC_KEYMAP_LAYER_COUNT 7
 /* QK_GESC side effects*/
 #define GRAVE_ESC_CTRL_OVERRIDE
-// disabling some RGB Effects to reduce firmware size.
+/* vial support*/
+#define VIAL_KEYBOARD_UID {0x9C, 0x26, 0xB1, 0xAF, 0x7B, 0x91, 0xAC, 0x62}
+#define VIAL_UNLOCK_COMBO_ROWS { 0, 0 }
+#define VIAL_UNLOCK_COMBO_COLS { 0, 1 }
+/* disabling some RGB Effects to reduce firmware size */
 #undef ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
 #undef ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
 #undef ENABLE_RGB_MATRIX_CYCLE_ALL
