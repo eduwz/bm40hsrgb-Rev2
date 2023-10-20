@@ -3,7 +3,7 @@
 ![](https://i.imgur.com/pRpfnwDh.jpg)
     
     
-This is a QMK firmware[^1] for BM40HSRGB **Revision 2** board made by Kprepublic and available on: [Aliexpress](https://www.aliexpress.com/item/4001147779116.html) and [Kprepublic site](https://kprepublic.com/collections/bm40/products/bm40-rgb-40-hot-swap-custom-mechanical-keyboard-pcb-qmk-underglow-type-c-planck).
+This is a QMK firmware for BM40HSRGB **Revision 2** board made by Kprepublic and available on: [Aliexpress](https://www.aliexpress.com/item/4001147779116.html) and [Kprepublic site](https://kprepublic.com/collections/bm40/products/bm40-rgb-40-hot-swap-custom-mechanical-keyboard-pcb-qmk-underglow-type-c-planck).
 <br>Based on the [rgoulter bm40hsrgb](https://github.com/rgoulter/qmk_firmware/tree/bm40hsrgb_rev2/keyboards/kprepublic/bm40hsrgb) repository.
 
 # How to compile
@@ -42,7 +42,7 @@ Follow this [video guide](https://www.youtube.com/watch?v=fuBJbdCFF0Q) on how to
 ![](https://i.imgur.com/ochvfDZ.png)
 
 ## Adjust layer
-![](https://i.imgur.com/gS2INZML.png)
+![](https://i.imgur.com/gSINZML.png)
 
 - `Game` and `NumPad` are toggle layers keys.
 
@@ -52,6 +52,3 @@ I felt the need to have access to `Enter` with both hands and using the thumb fo
 
 The game layer is mainly for apex and csgo/valo, `1234` is used to cycle through weapons and utilities, so far I did not found a comfortable spot for the `4` key and thats the only key that i need to rebind ingame, currently using a mouse button for that.
 
-
-
-  [^1]: you can use [Vial](https://github.com/vial-kb/vial-gui) to configure the keymap without having to recompile and reflash.
