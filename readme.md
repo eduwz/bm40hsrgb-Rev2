@@ -15,40 +15,37 @@ Follow this [video guide](https://www.youtube.com/watch?v=fuBJbdCFF0Q) on how to
 # Visual layout
 
 ## Base layer
-![](https://i.imgur.com/tqWTTZR.png)
+![](https://i.imgur.com/X2vRFKD.png)
 
 - `Gesc` = Escape when pressed, ` when Shift or GUI are held.
 - `Rs Enter` = Right Shift when held, Enter when tapped.
 - `Ctrl Del` = Right Control when held, Delete when tapped.
-- `Func` = Function layer when held Tab or ' when tapped.
-- `Lower` &dArr; and `Raise` &uArr; are layer keys.
-- `Lower` &dArr; is Tap toggle = Acts like a Momentarily layer unless it’s tapped multiple times, which toggles the layer on.
+- `Lower` and `Raise` are the main layer keys.
 
 ## Lower layer
-![](https://i.imgur.com/GdZs82s.png)
+![](https://i.imgur.com/bPHJvOC.png)
 
-- Blank keys = Transparent keys which Use the next lowest non-transparent key.
+- `Blank keys` = Transparent keys, which Use the next lowest non-transparent key.
 
 ## Raise layer
-![](https://i.imgur.com/I36v4tu.png)
+![](https://i.imgur.com/HkuMlKK.png)
 
 ## Game layer
-![](https://i.imgur.com/3bDBSOM.png)
-
-## Function layer
-![](https://i.imgur.com/JPPDmIa.png)
+![](https://i.imgur.com/8bjV6qh.png)
 
 ## Numpad layer
-![](https://i.imgur.com/ochvfDZ.png)
+![](https://i.imgur.com/V4S8Mje.png)
 
 ## Adjust layer
-![](https://i.imgur.com/gSINZML.png)
+![](https://i.imgur.com/zBf7NHD.png)
 
+- `Adjust` layer can be accessed by pressing `Lower` and `Raise` together.
 - `Game` and `NumPad` are toggle layers keys.
 
 
 # Layout goals and thoughts
-I felt the need to have access to `Enter` with both hands and using the thumb for `Enter` feels better but I still use the Shift/Enter key sometimes.
+I'm still experimenting with different layouts, but for now I find comfortable having Navigation keys accessible with both hands, so I made the rest of the Keymap around that.
 
-The game layer is mainly for apex and csgo/valo, `1234` is used to cycle through weapons and utilities, so far I did not found a comfortable spot for the `4` key and thats the only key that i need to rebind ingame, currently using a mouse button for that.
+The `Game` `layer` is mainly for fps games, where `1234` is used to cycle through weapons and utilities. Layer swapping to access these keys can make your character stop moving or lose speed/momentum during the process, and the delay of pressing two keys can be too much.
 
+The next step should probably be ditching the Qwerty layout for something more efficient...
