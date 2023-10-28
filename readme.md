@@ -23,7 +23,7 @@ Follow this [video guide](https://www.youtube.com/watch?v=fuBJbdCFF0Q) on how to
 - `Lower` and `Raise` are the main layer keys.
 
 ## Lower layer
-![](https://i.imgur.com/bPHJvOC.png)
+![](https://i.imgur.com/0hhCPL3.png)
 
 - `Blank keys` = Transparent keys, which Use the next lowest non-transparent key.
 
@@ -37,15 +37,21 @@ Follow this [video guide](https://www.youtube.com/watch?v=fuBJbdCFF0Q) on how to
 ![](https://i.imgur.com/V4S8Mje.png)
 
 ## Adjust layer
-![](https://i.imgur.com/zBf7NHD.png)
+![](https://i.imgur.com/ULH68NT.png)
 
 - `Adjust` layer can be accessed by pressing `Lower` and `Raise` together.
 - `Game` and `NumPad` are toggle layers keys.
-
+- `Qwerty`, `Colemak` and `Workman` switches the Default Layer.
 
 # Layout goals and thoughts
+
+Currently, I'm making the transition out of Qwerty, and I am trying out Colemak-DHM and Workman, which I can access by using the DF() switches on the Adjust layer.<br>
+<br>
+Colemak-DHM layout:
+![](https://i.imgur.com/6GLxYCQ.png)
+Workman layout:
+![](https://i.imgur.com/uOjyzj5.png)
+
 I'm still experimenting with different layouts, but for now I find comfortable having Navigation keys accessible with both hands, so I made the rest of the Keymap around that.
 
 The `Game` `layer` is mainly for fps games, where `1234` is used to cycle through weapons and utilities. Layer swapping to access these keys can make your character stop moving or lose speed/momentum during the process, and the delay of pressing two keys can be too much.
-
-The next step should probably be ditching the Qwerty layout for something more efficient...
