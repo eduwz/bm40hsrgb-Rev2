@@ -17,6 +17,8 @@
 
 enum layers {
   _QWERTY,
+  _COLEMAK,
+  _WORKMAN,
   _LOWER,
   _RAISE,
   _GAME,
@@ -30,6 +32,9 @@ enum layers {
 #define GAME TG(_GAME)
 #define NUMP TG(_NUMP)
 #define DCTRL RCTL_T(KC_DEL)
+#define QWTY DF(_QWERTY)
+#define CLMK DF(_COLEMAK)
+#define WKMN DF(_WORKMAN)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -37,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * | GEsc |   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  | Bksp |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | TAB  |   A  |   S  |   D  |   F  |   G  |   H  |   J  |   K  |   L  |   ;  |   "  |
+ * | TAB  |   A  |   S  |   D  |   F  |   G  |   H  |   J  |   K  |   L  |   ;  |   '  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  | SEnt |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -46,26 +51,60 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_QWERTY] = LAYOUT_ortho_4x12_1x2uC(
     QK_GESC, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
-    KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_DQT,
+    KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SC_SENT,
     KC_LCTL, KC_LGUI, KC_LALT, KC_ENT,  LOWER,   KC_SPC,  RAISE,   KC_ENT,  KC_RALT, KC_APP,  DCTRL
 ),
+/* Colemak-DHM
+ * ,-----------------------------------------------------------------------------------.
+ * |      |   Q  |   W  |   F  |   P  |   B  |   J  |   L  |   U  |   Y  |   ;  |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      |   A  |   R  |   S  |   T  |   G  |   M  |   N  |   E  |   I  |   O  |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      |   Z  |   X  |   C  |   D  |   V  |   K  |   H  |      |      |      |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      |      |      |      |      |             |      |      |      |      |      |
+ * `-----------------------------------------------------------------------------------'
+ */
+[_COLEMAK] = LAYOUT_ortho_4x12_1x2uC(
+    KC_TRNS, KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_TRNS,
+    KC_TRNS, KC_A,    KC_R,    KC_S,    KC_T,    KC_G,    KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_TRNS,
+    KC_TRNS, KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,    KC_K,    KC_H,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+ ),
+/* Workman
+ * ,-----------------------------------------------------------------------------------.
+ * |      |   Q  |   D  |   R  |   W  |   B  |   J  |   F  |   U  |   P  |   ;  |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      |   A  |   S  |   H  |   T  |   G  |   Y  |   N  |   E  |   O  |   I  |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      |   Z  |   X  |   M  |   C  |   V  |   K  |   L  |      |      |      |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      |      |      |      |      |             |      |      |      |      |      |
+ * `-----------------------------------------------------------------------------------'
+ */
+[_WORKMAN] = LAYOUT_ortho_4x12_1x2uC(
+    KC_TRNS, KC_Q,    KC_D,    KC_R,    KC_W,    KC_B,    KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN, KC_TRNS,
+    KC_TRNS, KC_A,    KC_S,    KC_H,    KC_T,    KC_G,    KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_TRNS,
+    KC_TRNS, KC_Z,    KC_X,    KC_M,    KC_C,    KC_V,    KC_K,    KC_L,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+ ),
 /* Lower
  * ,-----------------------------------------------------------------------------------.
  * |   `  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |  9   |   0  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |  Up  | Left | Down | Right|      |      |   -  |   =  |   [  |   ]  |  \   |
+ * |      |  Up  | Left | Down | Right|MMouse|      |   -  |   =  |   [  |   ]  |  \   |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |  End | Pg Up| Pg Dn| Home |      |      |   _  |   +  |   {  |   }  |  |   |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |             |ADJUST|      |      |      |      |
+ * |      |      |      |      |      |             |ADJUST|      |      |      |PrntSc|
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_ortho_4x12_1x2uC(
     KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_TRNS,
-    KC_TRNS, KC_UP,   KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_TRNS, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSLS,
+    KC_TRNS, KC_UP,   KC_LEFT, KC_DOWN, KC_RGHT, KC_BTN3, KC_TRNS, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSLS,
     KC_TRNS, KC_END,  KC_PGUP, KC_PGDN, KC_HOME, KC_TRNS, KC_TRNS, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE,
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, ADJUST,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, ADJUST,  KC_TRNS, KC_TRNS, KC_TRNS, KC_PSCR
 ),
 /* Raise
  * ,-----------------------------------------------------------------------------------.
@@ -124,7 +163,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |RGBM- | HUE- | SAT- |BRGTH-|SPEED-|      |      |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |      |      |      |      | Reset| Debug|      |
+ * |      |Qwerty|Colemk|WorkMN|      |      |      |      |      | Reset| Debug|      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |      |      |             |      |      |      |      |      |
  * `-----------------------------------------------------------------------------------'
@@ -132,7 +171,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_ADJUST] = LAYOUT_ortho_4x12_1x2uC(
     GAME,  KC_NO, RGB_TOG, RGB_MOD,  RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI, KC_NO, KC_NO,   KC_NO,   NUMP,
     KC_NO, KC_NO, KC_NO,   RGB_RMOD, RGB_HUD, RGB_SAD, RGB_VAD, RGB_SPD, KC_NO, KC_NO,   KC_NO,   KC_NO,
-    KC_NO, KC_NO, KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, QK_BOOT, DB_TOGG, KC_NO,
+    KC_NO, QWTY,  CLMK,    WKMN,     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, QK_BOOT, DB_TOGG, KC_NO,
     KC_NO, KC_NO, KC_NO,   KC_NO,    KC_TRNS, KC_TRNS, KC_TRNS, KC_NO,   KC_NO, KC_NO,   KC_NO
 )
 };
