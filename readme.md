@@ -15,20 +15,28 @@ Follow this [video guide](https://www.youtube.com/watch?v=fuBJbdCFF0Q) on how to
 # Visual layout
 
 ## Base layer
-![](https://i.imgur.com/X2vRFKD.png)
+![](https://i.imgur.com/DQAzBlG.png)
 
-- `Gesc` = Escape when pressed, ` when Shift or GUI are held.
-- `Rs Enter` = Right Shift when held, Enter when tapped.
-- `Ctrl Del` = Right Control when held, Delete when tapped.
+- `Gesc` - Escape when pressed, ` when Shift or GUI are held.
+- `Rs Enter` - Right Shift when held, Enter when tapped.
+- `Ctrl Del` - Right Control when held, Delete when tapped.
+- `Enter Binds` - Bindings layer when held, Enter when tapped.
 - `Lower` and `Raise` are the main layer keys.
 
 ## Lower layer
-![](https://i.imgur.com/0hhCPL3.png)
+![](https://i.imgur.com/nhAuk8p.png)
 
-- `Blank keys` = Transparent keys, which Use the next lowest non-transparent key.
+- `Blank keys` - Transparent keys, which Use the next lowest non-transparent key.
 
 ## Raise layer
-![](https://i.imgur.com/HkuMlKK.png)
+![](https://i.imgur.com/w1knyqW.png)
+
+- `Sound` - Shortcut for the Windows Sound Output 
+
+## Bindings layer
+![](https://i.imgur.com/F5omrn8.png)
+
+- This layer contains some key shortcuts
 
 ## Game layer
 ![](https://i.imgur.com/8bjV6qh.png)
@@ -45,8 +53,10 @@ Follow this [video guide](https://www.youtube.com/watch?v=fuBJbdCFF0Q) on how to
 
 # Layout goals and thoughts
 
-Currently, I'm making the transition out of Qwerty, and I am trying out Colemak-DHM and Workman, which I can access by using the DF() switches on the Adjust layer.<br>
-<br>
+Currently, I'm making the transition out of Qwerty, and I am trying out Colemak-DHM and Workman, which I can access by using the DF() switches on the Adjust layer.
+
+Changing layouts messes with the muscular memory for the shortcuts, so I put some commonly used ones in a layer that I can access with the Layer Tap on `Enter Binds`.
+
 Colemak-DHM layout:
 ![](https://i.imgur.com/6GLxYCQ.png)
 Workman layout:
