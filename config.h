@@ -4,7 +4,7 @@
 #define FORCE_NKRO
 #define QMK_KEYS_PER_SCAN 12
 /* Layer count */
-#define DYNAMIC_KEYMAP_LAYER_COUNT 8
+#define DYNAMIC_KEYMAP_LAYER_COUNT 9
 /* QK_GESC side effects */
 #define GRAVE_ESC_CTRL_OVERRIDE
 /* Tapping */
