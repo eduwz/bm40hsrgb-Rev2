@@ -15,52 +15,55 @@ Follow this [video guide](https://www.youtube.com/watch?v=fuBJbdCFF0Q) on how to
 # Visual layout
 
 ## Base layer
-![](https://i.imgur.com/DQAzBlG.png)
+![](https://i.imgur.com/nUIucHU.png)
 
 - `Gesc` - Escape when pressed, ` when Shift or GUI are held.
-- `Rs Enter` - Right Shift when held, Enter when tapped.
+- `Enter Shift` - Right Shift when held, Enter when tapped.
 - `Ctrl Del` - Right Control when held, Delete when tapped.
-- `Enter Binds` - Bindings layer when held, Enter when tapped.
+- `Enter Sym` - Symbol layer when held, Enter when tapped.
 - `Lower` and `Raise` are the main layer keys.
 
 ## Lower layer
-![](https://i.imgur.com/nhAuk8p.png)
+![](https://i.imgur.com/W6fwEYN.png)
 
 - `Blank keys` - Transparent keys, which Use the next lowest non-transparent key.
+- `Gray keys` - Key held to access the current layer.
+- `Search` - Control + F.
+- `Focus Url` - Control + L.
 
 ## Raise layer
-![](https://i.imgur.com/w1knyqW.png)
+![](https://i.imgur.com/ahg1NYl.png)
 
 - `Sound` - Shortcut for the Windows Sound Output 
 
-## Bindings layer
-![](https://i.imgur.com/F5omrn8.png)
+## Symbol layer
+![](https://i.imgur.com/ykD9dVZ.png)
 
-- This layer contains some key shortcuts
+- Windows + Arrows and some Copy & Pasta shortcuts.
 
 ## Game layer
-![](https://i.imgur.com/8bjV6qh.png)
+![](https://i.imgur.com/lpuYmhn.png)
+
+- This layer works as base layer.
+- All the transparent keys are `Qwerty` which is layer 0.
 
 ## Numpad layer
-![](https://i.imgur.com/V4S8Mje.png)
+![](https://i.imgur.com/plPeppp.png)
+- This is a toggle layer that can be accessed in the `Adjust` layer.
 
 ## Adjust layer
-![](https://i.imgur.com/ULH68NT.png)
+![](https://i.imgur.com/LYWQCLg.png)
 
 - `Adjust` layer can be accessed by pressing `Lower` and `Raise` together.
-- `Game` and `NumPad` are toggle layers keys.
-- `Qwerty`, `Colemak` and `Workman` switches the Default Layer.
+- `NumPad` is a toggle layer keys.
+- `Qwerty`, `Colemak` and `GAME` switches the default layer.
 
 # Layout goals and thoughts
 
-Currently, I'm making the transition out of Qwerty, and I am trying out Colemak-DHM and Workman, which I can access by using the DF() switches on the Adjust layer.
-
-Changing layouts messes with the muscular memory for the shortcuts, so I put some commonly used ones in a layer that I can access with the Layer Tap on `Enter Binds`.
+Currently, I'm learning and using `Colemak-DH` over `Qwerty`, which I can access by using a DF() switch in the `Adjust` layer.
 
 Colemak-DHM layout:
-![](https://i.imgur.com/6GLxYCQ.png)
-Workman layout:
-![](https://i.imgur.com/uOjyzj5.png)
+![](https://i.imgur.com/WjcOV3Z.png)
 
 I'm still experimenting with different layouts, but for now I find comfortable having Navigation keys accessible with both hands, so I made the rest of the Keymap around that.
 
