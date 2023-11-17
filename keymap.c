@@ -134,16 +134,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * |   ~  |   !  |   @  |   #  |   $  |   %  |   ^  |   &  |   *  |   (  |   )  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      | WinU | WinL | WinD | WinR |      |      |   _  |   +  |   {  |   }  |   |  |
+ * |      | WinU | WinL | WinD | WinR | Prnt |      |   _  |   +  |   {  |   }  |   |  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      | Undo |  Cut | Copy | Paste| Redo |      |      |      |      |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      | Prnt |      |      |             |      |      |      |      |      |
+ * |      |      |      |      |      |             |      |      |      |      |      |
  * `-----------------------------------------------------------------------------------'
 */
 [_SYM] = LAYOUT_ortho_4x12_1x2uC(
     KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_TRNS,
-    KC_TRNS, WINU,    WINL,    WIND,    WINR,    KC_TRNS, KC_TRNS, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE,
+    KC_TRNS, WINU,    WINL,    WIND,    WINR,    KC_PSCR, KC_TRNS, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE,
     KC_TRNS, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), C(KC_Y), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
 ),
@@ -202,6 +202,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 bool rgb_matrix_indicators_advanced_user (uint8_t led_min, uint8_t led_max) {
   /* Layer indicator on Game layer */
+
       switch(get_highest_layer(layer_state|default_layer_state)) {
           case 6:
               rgb_matrix_set_color(29, RGB_MAGENTA);
@@ -213,6 +214,7 @@ bool rgb_matrix_indicators_advanced_user (uint8_t led_min, uint8_t led_max) {
           default:
               break;
       }
+
   /* Layer indicator only on keys with configured keycodes */
   if (get_highest_layer (layer_state) > 0) {
     uint8_t layer = get_highest_layer (layer_state);
