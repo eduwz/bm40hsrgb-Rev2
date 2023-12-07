@@ -32,25 +32,27 @@ Navigation layer
 - `Focus Url` - Control + L.
 - `Win` + `Left/Down/Right/Up` - Windows Snap
 ## Raise layer
-![](https://imgur.com/k5UauOA.png)
+![](https://imgur.com/HhSB8J2.png)
 Symbols layer
 
 
 ## Numbers & Function layer
-![](https://imgur.com/TJTTDJM.png)
+![](https://imgur.com/LMZbc58.png)
 
 - `Sound` - Shortcut for the Windows Sound Output 
 
 ## Game layer
-![](https://imgur.com/Chhpo7F.png)
-Work in progress, not 100% happy with the high pinky finger usage.<br>
-For short periods, this is fine, but it may be a problem in longer sessions.
+![](https://imgur.com/KcZJFtH.png)
 
+- `Num Fum` - Numbers & Functions layer.
 - This layer can be toggled on the `Adjust` layer.
+- The key `GAME` untoggles the layer.
+
 
 ## Numpad layer
-![](https://imgur.com/DBgph28.png)
+![](https://imgur.com/zT6dsgS.png)
 - This is a toggle layer that can be accessed in the `Adjust` layer.
+- The key `Numpad` untoggles the layer.
 
 ## Adjust layer
 ![](https://imgur.com/T03FCAa.png)
@@ -69,4 +71,4 @@ Colemak-DHM layout:
 Overall I'm still experimenting with different layouts and trying to find new tech to improve my keymap,<br>
 e.g. recently I've been trying [Caps Word](https://docs.qmk.fm/#/feature_caps_word) using both shifts to activate, and so far, it's great.
 
-The `Game` `layer` is mainly for fps games, where `1234` is used to cycle through weapons and utilities. Layer swapping to access these keys can make your character stop moving or lose speed/momentum during the process, and the delay of pressing two keys can be too much.
+The `Game` `layer` is mainly for fps games, where `1234` is used to cycle through weapons and utilities. Layer swapping to access these keys can make your character stop moving or lose speed/momentum during the process, and the delay of pressing two keys can be too much, I can use `Num Fun` to access all the numbers and function keys if needed, also the `Tab` key is placed inside the `Num Fun`.
