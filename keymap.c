@@ -81,19 +81,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  ),
 /* Layout on progess
  * ,-----------------------------------------------------------------------------------.
- * |      |   M  |   L  |   H  |   D  |   Q  |   K  |   V  |   U  |   O  |   Y  |      |
+ * |      |   G  |   L  |   M  |   P  |   K  |   X  |   B  |   U  |   O  |   Y  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |   C  |   R  |   S  |   T  |   '  |   B  |   N  |   E  |   A  |   I  |   ;  |
+ * |      |   C  |   R  |   S  |   T  |   '  |   F  |   N  |   E  |   A  |   I  |   ;  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |   W  |   J  |   F  |   G  |   Z  |   X  |   P  |      |      |      |      | 
+ * |      |   Q  |   J  |   V  |   D  |   W  |   Z  |   H  |      |      |      |      | 
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |      |      |             |      |      |      |      |      |
  * `-----------------------------------------------------------------------------------'
  */
 [_EDUWZ] = LAYOUT_ortho_4x12_1x2uC(
-    KC_TRNS, KC_M,    KC_L,    KC_H,    KC_D,    KC_Q,    KC_K,    KC_V,    KC_U,    KC_O,    KC_Y,    KC_TRNS,
-    KC_TRNS, KC_C,    KC_R,    KC_S,    KC_T,    KC_QUOT, KC_B,    KC_N,    KC_E,    KC_A,    KC_I,    KC_SCLN,
-    KC_TRNS, KC_W,    KC_J,    KC_F,    KC_G,    KC_Z,    KC_X,    KC_P,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_G,    KC_L,    KC_M,    KC_P,    KC_K,    KC_X,    KC_B,    KC_U,    KC_O,    KC_Y,    KC_TRNS,
+    KC_TRNS, KC_C,    KC_R,    KC_S,    KC_T,    KC_QUOT, KC_F,    KC_N,    KC_E,    KC_A,    KC_I,    KC_SCLN,
+    KC_TRNS, KC_Q,    KC_J,    KC_V,    KC_D,    KC_W,    KC_Z,    KC_H,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
  ),
 /* Lower
