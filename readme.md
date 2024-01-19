@@ -15,60 +15,62 @@ Follow this [video guide](https://www.youtube.com/watch?v=fuBJbdCFF0Q) on how to
 # Visual layout
 
 ## Base layer
-![](https://imgur.com/RZSS9C7.png)
+![](https://i.imgur.com/l1SbwfC.png) 
 
 - `Gesc` - Escape when pressed, ` when Shift or GUI are held.
 - `Enter Shift` - Right Shift when held, Enter when tapped.
 - `Ctrl Del` - Right Control when held, Delete when tapped.
-- `Num Fun`, `Lower` and `Raise` are the main layer keys.
+- `Fun`, `Lower` and `Raise` are the main layer keys.
 
 ## Lower layer
-![](https://imgur.com/BHgw5Lu.png)
-Navigation layer
+![](https://imgur.com/X84RrWj.png)
+Navigation and Numbers
 
 - `Blank keys` - Transparent keys, which Use the next lowest non-transparent key.
 - `Gray keys` - Key held to access the current layer.
 - `Search` - Control + F.
 - `Focus Url` - Control + L.
-- `Win` + `Left/Down/Right/Up` - Windows Snap
+
 ## Raise layer
 ![](https://imgur.com/HhSB8J2.png)
 Symbols layer
 
 
-## Numbers & Function layer
-![](https://imgur.com/LMZbc58.png)
+## Function layer
+![](https://imgur.com/kqW7D1z.png)
 
+- `Win` + `Left/Down/Right/Up` - Windows Snap
 - `Sound` - Shortcut for the Windows Sound Output 
 
 ## Game layer
-![](https://imgur.com/KcZJFtH.png)
+![](https://imgur.com/06AEUmL.png)
 
-- `Num Fum` - Numbers & Functions layer.
-- This layer can be toggled on the `Adjust` layer.
+- `Fun` - Functions layer.
+- This layer can be toggled on the `Adjust` layer or with the `Menu` + `Ctrl Del` combo on the base layer.
 - The key `GAME` untoggles the layer.
 
-
-## Numpad layer
-![](https://imgur.com/zT6dsgS.png)
-- This is a toggle layer that can be accessed in the `Adjust` layer.
-- The key `Numpad` untoggles the layer.
-
 ## Adjust layer
-![](https://imgur.com/T03FCAa.png)
+![](https://imgur.com/eJ9WRft.png)
 
 - `Adjust` layer can be accessed by holding `Lower` and `Raise` together.
-- `NumPad` and `GAME` are toggle layer keys.
+- `GAME` is a toggle layer key.
 - `Qwerty` and `Colemak` switches the default layer.
 
-# Layout goals and thoughts
+## Layout goals and thoughts
 
 I'm actually using `Colemak-DH` over `Qwerty`, which I can access by switch in the `Adjust` layer.
 
-Colemak-DHM layout:
+`Colemak-DH` layout:
 ![](https://imgur.com/SvV613q.png)
 
-Overall I'm still experimenting with different layouts and trying to find new tech to improve my keymap,<br>
-e.g. recently I've been trying [Caps Word](https://docs.qmk.fm/#/feature_caps_word) using both shifts to activate, and so far, it's great.
+Currently using `Colemak DH`, it has nice rolls and felt better than `Qwerty` right away. But since
+I type in English and Portuguese there are some annoyances.<br>
+There is a lot of `'` usage in Portuguese, and with `Colemak DH` typing `'` + `oieu` is uncomfortable, so I will still be on the look for alternative layouts.
 
-The `Game` `layer` is mainly for fps games, where `1234` is used to cycle through weapons and utilities. Layer swapping to access these keys can make your character stop moving or lose speed/momentum during the process, and the delay of pressing two keys can be too much, I can use `Num Fun` to access all the numbers and function keys if needed, also the `Tab` key is placed inside the `Num Fun`.
+The `Game` `layer` is mainly for fps games, where `1234` is used to cycle through weapons and utilities. Layer swapping to access these keys can make your character stop moving or lose speed/momentum during the process, and the delay of pressing two keys can be too much.<br> The `Tab` key is placed inside the `Fun` layer.
+
+---
+some other tech:<br>
+[Caps Word](https://docs.qmk.fm/#/feature_caps_word) - using both shifts to activate.<br>
+[Combo](https://docs.qmk.fm/#/feature_combo) - used to toggle the `Game` layer with `Menu` + `Ctrl Del`<br>
+[RGB Matrix](https://docs.qmk.fm/#/feature_rgb_matrix) - used for layer indication.
